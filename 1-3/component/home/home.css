@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.container {
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color: #FF0000;
+    
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out; 
+}
+
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.menu-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #ff9a47;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #FF4500; 
+}
+
+.menu-button:active {
+    background-color: #FF0000; 
+}
+
+.menu-button:focus {
+    outline: none;
+}

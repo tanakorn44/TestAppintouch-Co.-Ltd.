@@ -1,0 +1,117 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
+}
+
+.details-container {
+    position: relative;
+    width: 100%;
+    overflow: auto; 
+}
+
+.details-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 24vh;
+    object-fit: cover;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #FF6347;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.back-button:hover {
+    background-color: #FF4500; /* OrangeRed */
+}
+
+.back-button:active {
+    background-color: #FF0000; /* Red */
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 100px auto;
+    padding: 120px;
+    width: 80%;
+    z-index: 1;
+}
+
+.left-side, .right-side {
+    width: 45%;
+    box-sizing: border-box; 
+}
+
+.left-side h2, .right-side h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #e04242;
+    padding-bottom: 5px;
+}
+
+.left-side h1 {
+    font-size: 2.5em;
+    margin: 20px 0 10px;
+}
+
+.left-side h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.right-side p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+.product-img {
+    width: 75%;
+    max-width: 125px; 
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+
+.divider {
+    width: 2px;
+    height: 80vh;
+    background-color: #020202; 
+    min-height: 200px; 
+    margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-side, .right-side {
+        width: 100%;
+        text-align: center;
+    }
+    .divider {
+        display: none; /* ซ่อน divider เมื่อหน้าจอเล็ก */
+    }
+}
